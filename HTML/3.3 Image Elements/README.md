@@ -1,5 +1,5 @@
 # GOAL
-1. ![Kitten Image](goal1.png)
+![Kitten Image](goal1.png)
 ![Puppy Image](goal2.png)
 
 ## Source Code
