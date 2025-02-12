@@ -1,4 +1,4 @@
-# GOAL 1
+# GOAL
 ![Kitten Image](goal1.png)
 ![Puppy Image](goal2.png)
 
