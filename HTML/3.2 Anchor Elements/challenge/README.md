@@ -1,5 +1,5 @@
 # GOAL
-![Anchor Element](goal.png)
+![Anchor Element](image.png)
 
 ## Source Code
 You can see the source code in [Here](index.html)
