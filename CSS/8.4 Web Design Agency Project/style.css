@@ -1,0 +1,86 @@
+body {
+  font-family: "Poppins", sans-serif; /* Sets the font to Poppins */
+  margin: 50px 50px 0; /* Adds margin (50px top, 50px left & right, 0 bottom) */
+  background-color: #faf9f6; /* Applies a soft background color */
+  display: flex;
+  flex-direction: column; /* Organizes elements in a vertical layout */
+  min-height: 95vh; /* Ensures the page fills at least 95% of the viewport height */
+}
+
+/* Expands the main section to fill available space */
+.main {
+  flex: 1;
+}
+
+/* Justifies text inside a paragraph within .card */
+.main > .card > p {
+  text-align: justify;
+}
+
+/* Sets the text color for highlighted elements */
+.highlight {
+  color: midnightblue;
+}
+
+/* Defines the size of the main heading */
+h1 {
+  font-size: 5rem;
+}
+
+/* Sets the width for cards */
+.card {
+  width: 45%;
+}
+
+/* Aligns elements to the left */
+.left {
+  float: left;
+}
+
+/* Aligns elements to the right */
+.right {
+  float: right;
+}
+
+/* Styles the title image */
+.title-image {
+  width: 200px; /* Sets a fixed width for the image */
+  float: left; /* Positions the image to the left */
+  margin-right: 50px; /* Adds spacing between the image and surrounding text */
+  margin-bottom: 50px;
+}
+
+/* Styles the footer */
+footer {
+  text-align: right; /* Aligns footer text to the right */
+  color: midnightblue;
+  clear: both; /* Ensures the footer is positioned below floated elements */
+}
+
+/* Media Queries: Adjusts styles for smaller screens */
+@media (max-width: 680px) {
+  /* Adjusts logo size for smaller screens */
+  .logo {
+    width: 100px;
+  }
+
+  /* Reduces the main heading size and centers it */
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  /* Makes cards take full width on smaller screens */
+  .card {
+    width: 100%;
+    display: block;
+    text-align: justify;
+  }
+
+  /* Ensures images inside .card fit within the container */
+  .card img {
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
