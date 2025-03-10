@@ -9,3 +9,14 @@
   - <img src="https://cdn-icons-png.flaticon.com/128/5564/5564675.png" width="20"> [Flag Project](./CSS/7.3%20CSS%20Flag%20Project/)
   - <img src="https://cdn-icons-png.flaticon.com/128/4213/4213056.png" width="20"> [Web Design Agency](./CSS/8.4%20Web%20Design%20Agency%20Project/)
   - <img src="https://cdn-icons-png.flaticon.com/128/13191/13191392.png" width="20"> [Pricing Table Project](./FlexBox/9.4%20Flexbox%20Pricing%20Table%20Project/)
+
+
+| Project | Source Code | Demo |
+| :---         |     :---:      |          ---: |
+| Portofolio   | [Portofolio](./Multi-Page%20Web/4.3%20HTML%20Porfolio%20Project/)     | [Demo](https://ghifariezra.github.io/full-stack-web/Multi-Page%20Web/4.3%20HTML%20Porfolio%20Project/)    |
+| My Resmue   | [My Resume](./Multi-Page%20Web/Capstone-Project/)     | [Demo](https://ghifariezra.github.io/full-stack-web/Multi-Page%20Web/Capstone-Project/)    |
+| Color Vocab   | [Color Vocab](./CSS/5.4%20Color%20Vocab%20Project/)     | [Demo](https://ghifariezra.github.io/full-stack-web/CSS/5.4%20Color%20Vocab%20Project/)    |
+| Motivational Poster   | [Motivational Poster](./CSS/6.4%20Motivation%20Meme%20Project/)     | [Demo](https://ghifariezra.github.io/full-stack-web/CSS/5.4%20Color%20Vocab%20Project/)    |
+| Flag   | [Flag](./CSS/7.3%20CSS%20Flag%20Project/)     | [Demo](https://ghifariezra.github.io/full-stack-web/CSS/7.3%20CSS%20Flag%20Project/)    |
+| Web Design Agency   | [Web Design Agency](./CSS/8.4%20Web%20Design%20Agency%20Project/)     | [Demo](https://ghifariezra.github.io/full-stack-web/CSS/8.4%20Web%20Design%20Agency%20Project/)    |
+| Pricing Table   | [Pricing Table](./FlexBox/9.4%20Flexbox%20Pricing%20Table%20Project/)     | [Demo](https://ghifariezra.github.io/full-stack-web/FlexBox/9.4%20Flexbox%20Pricing%20Table%20Project/)    |
