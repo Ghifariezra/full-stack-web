@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceland&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Sets the main font and default text size */
+      body {
+        font-family: "Iceland", sans-serif;
+        font-size: 16px;
+      }
+
+      /* Creates a flex container with centered alignment and spacing */
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
+      }
+
+      /* Defines individual pricing plans with background color and rounded corners */
+      .pricing-plan {
+        flex: 1;
+        max-width: 400px;
+        background-color: rgb(216, 232, 216);
+        color: rgb(54, 59, 54);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      /* Styles the title and price section with contrasting colors and bold text */
+      .pricing-container > .pricing-plan > div {
+        background-color: rgb(54, 59, 54);
+        color: rgb(216, 232, 216);
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: capitalize;
+        padding: 0 50px 0 50px;
+      }
+
+      /* Highlights the price with larger and green-colored text */
+      .pricing-container > .pricing-plan > .plan-price {
+        padding-bottom: 20px;
+        font-size: 2em;
+        color: lime;
+      }
+
+      /* Rounds the top corners of the pricing title */
+      .pricing-container > .pricing-plan > .plan-title {
+        border-radius: 10px 10px 0 0;
+        padding-top: 20px;
+      }
+
+      /* Removes bullet points and aligns the text */
+      ul {
+        display: block;
+        list-style: none;
+        color: rgb(54, 59, 54);
+        padding: 0 20px 0 20px;
+        text-align: left;
+      }
+
+      /* Adds spacing between list items */
+      li {
+        padding: 10px 0 10px 0;
+      }
+
+      /* Styles the button with rounded corners and bold text */
+      .plan-button {
+        width: 50%;
+        height: 30px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(54, 59, 54);
+        color: rgb(216, 232, 216);
+        margin: 0 0 20px 0;
+        font-weight: bold;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        /* Adjusts layout for smaller screens */
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
