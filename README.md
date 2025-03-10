@@ -8,3 +8,4 @@
   - <img src="https://cdn-icons-png.flaticon.com/128/3400/3400744.png" width="20"> [Motivational Poster Project](./CSS/6.4%20Motivation%20Meme%20Project/)
   - <img src="https://cdn-icons-png.flaticon.com/128/5564/5564675.png" width="20"> [Flag Project](./CSS/7.3%20CSS%20Flag%20Project/)
   - <img src="https://cdn-icons-png.flaticon.com/128/4213/4213056.png" width="20"> [Web Design Agency](./CSS/8.4%20Web%20Design%20Agency%20Project/)
+  - <img src="https://cdn-icons-png.flaticon.com/128/13191/13191392.png" width="20"> [Pricing Table Project](./FlexBox/9.4%20Flexbox%20Pricing%20Table%20Project/)
