@@ -3,7 +3,9 @@
 # GOAL-SMALL
 ![Goal](goal-small.png)
 
-# RESULT
+# RESULT-LARGE
+![Goal](goal-large.png)
+# RESULT-SMALL
 ![Goal](goal-small.png)
 
 
