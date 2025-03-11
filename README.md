@@ -9,4 +9,4 @@
 | 5   |               [_Flag_](./CSS/7.3%20CSS%20Flag%20Project/)               |                    [Demo](https://ghifariezra.github.io/full-stack-web/CSS/7.3%20CSS%20Flag%20Project/) |
 | 6   |   [_Web Design Agency_](./CSS/8.4%20Web%20Design%20Agency%20Project/)   |         [Demo](https://ghifariezra.github.io/full-stack-web/CSS/8.4%20Web%20Design%20Agency%20Project/) |
 | 7   | [_Pricing Table_](./FlexBox/9.4%20Flexbox%20Pricing%20Table%20Project/) | [Demo](https://ghifariezra.github.io/full-stack-web/FlexBox/9.4%20Flexbox%20Pricing%20Table%20Project/) |
-| 8   |      [_Move With Joy_](./Bootstrap/11.2%20Bootstrap%20Components/)      |                                                                                               [Demo](#) |
+| 8   |      [_Move With Joy_](./Bootstrap/11.2%20Bootstrap%20Components/)      |           [Demo](https://ghifariezra.github.io/full-stack-web/Bootstrap/11.2%20Bootstrap%20Components/) |
