@@ -1,0 +1,167 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  height: 100vh;
+  background-color: white;
+}
+
+/* Home Page */
+
+.container-home {
+  background-color: #efefef;
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+.items {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  gap: 110px;
+  margin-top: 120px;
+}
+
+.star {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  color: #131313;
+  font-size: 56px;
+  line-height: 125px;
+  text-align: center;
+  margin: 0;
+}
+
+#star2 {
+  align-self: flex-end;
+}
+
+.item-tumbnail {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.item-2 {
+  width: 653px;
+  height: 367px;
+}
+
+.celebration {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* About Me */
+.container-about-me {
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 45px;
+}
+
+.item-profile {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.profile {
+  margin-top: 60px;
+  width: 150px;
+  height: 150px;
+}
+
+.img-profile {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 0 30% 0 30%;
+}
+
+p {
+  color: #131313;
+  font-size: 16px;
+  /* font: 600; */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Skills */
+
+.container-skills {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0px;
+  gap: 24px;
+}
+
+.item-skills {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 12px;
+  align-items: center;
+}
+
+ul.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+  margin: 0;
+}
+
+h3 {
+  color: #131313;
+  margin: 0px 0px 12px 0px;
+  padding: 0;
+}
+
+/* Footer */
+.container-footer {
+  background-color: #efefef;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 0px;
+  gap: 24px;
+}
+
+ul.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+}
