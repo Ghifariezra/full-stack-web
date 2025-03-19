@@ -12,4 +12,4 @@
 | 8   |      [_Move With Joy_](./Bootstrap/11.2%20Bootstrap%20Components/)      |           [Demo](https://ghifariezra.github.io/full-stack-web/Bootstrap/11.2%20Bootstrap%20Components/) |
 | 9   |            [_Tindog_](./Bootstrap/11.3%20TinDog%20Project/)             |                 [Demo](https://ghifariezra.github.io/full-stack-web/Bootstrap/11.3%20TinDog%20Project/) |
 | 10  |        [_My Resume v2_](./Multi-Page%20Web/Capstone-Project-2/)         |               [Demo](https://ghifariezra.github.io/full-stack-web/Multi-Page%20Web/Capstone-Project-2/) |
-| 11  |         [_My Resume v2_](./DOM/Drum%20Kit%20Starting%20Files/)          |                 [Demo](https://ghifariezra.github.io/full-stack-web/DOM/Drum%20Kit%20Starting%20Files/) |
+| 11  |            [Drum Kit](./DOM/Drum%20Kit%20Starting%20Files/)             |                 [Demo](https://ghifariezra.github.io/full-stack-web/DOM/Drum%20Kit%20Starting%20Files/) |
