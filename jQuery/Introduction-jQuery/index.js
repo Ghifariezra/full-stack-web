@@ -1,5 +1,5 @@
 // Change the color of the h1
-// $("h1").css("color", "red");
+$("h1").css("color", "red");
 
 // Change the color of the h1 using jQuery
 $(document).ready(function () {
