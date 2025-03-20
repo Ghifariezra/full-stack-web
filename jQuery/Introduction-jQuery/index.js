@@ -3,7 +3,7 @@ $("h1").css("color", "red");
 
 // Change the color of the h1 using jQuery
 $(document).ready(function () {
-    $("h1").css("color", "blue");
+  $("h1").css("color", "blue");
 });
 
 // Select all the buttons
@@ -34,30 +34,30 @@ $("h1").attr("class", "big-title red-title");
 
 // Add Event Listener
 $("h1").click(function () {
-    $("h1").css("color", "yellow");
-    // $("h1").css("border", "2px solid black");
+  $("h1").css("color", "yellow");
+  // $("h1").css("border", "2px solid black");
 });
 
 $("button").click(function () {
-    $("h1").css("color", "yellow");
+  $("h1").css("color", "yellow");
 });
 
-Get Key Press
+// Get Key Press
 $("input").keypress(function (event) {
-    console.log(event.key);
-    // $("h1").text(event.key);
+  console.log(event.key);
+  // $("h1").text(event.key);
 });
 
 // Change text when key is pressed
 $(document).keypress(function (event) {
-    console.log(event.key);
-    $("h1").text(event.key);
+  console.log(event.key);
+  $("h1").text(event.key);
 });
 
 // Mouse Events - Mouseover
 $("h1").on("mouseover", function () {
-    $("h1").css("color", "purple");
-})
+  $("h1").css("color", "purple");
+});
 
 // Add before and after elements to h1
 $("h1").before("<button>Before</button>");
@@ -67,30 +67,25 @@ $("h1").after("<button>After</button>");
 $("h1").prepend("<button>Prepend</button>");
 $("h1").append("<button>Append</button>");
 
-
 // Animate Elements with jQuery
 $("button").on("click", function () {
-    $("h1").hide();
-    setTimeout(function () {
-        $("h1").show();
-        $("h1").text("Thanks for clicking me!");
-    }, 200);
+  $("h1").hide();
+  setTimeout(function () {
+    $("h1").show();
+    $("h1").text("Thanks for clicking me!");
+  }, 200);
 
-    // Hide and Show
-    $("h1").toggle();
-    
-    // Fade In and Out
-    $("h1").fadeToggle();
-    
-    // Slide Up and Down
-    $("h1").slideToggle();
+  // Hide and Show
+  $("h1").toggle();
 
-    // Animate
-    $("h1").animate(
-        {opacity: 0.5}
-    );
+  // Fade In and Out
+  $("h1").fadeToggle();
 
-    $("h1").slideToggle().animate(
-        {opacity: 0.5}
-    );
+  // Slide Up and Down
+  $("h1").slideToggle();
+
+  // Animate
+  $("h1").animate({ opacity: 0.5 });
+
+  $("h1").slideToggle().animate({ opacity: 0.5 });
 });
