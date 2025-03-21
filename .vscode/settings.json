@@ -1,0 +1,8 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.tips.enabled": true
+}
