@@ -1,0 +1,26 @@
+<!-- Page Post Blog -->
+<section id="post-blog">
+  <form action="/article" method="POST" enctype="multipart/form-data">
+    <div class="form-upload">
+      <div class="upload">
+        <div class="image-area" id="drop-area">
+          <i class="bx bxs-cloud-upload"></i>
+          <h1>Upload Image</h1>
+          <h2>Image size must be less than <span class="highlight">2MB</span></h2>
+          <input type="file" name="image" accept="image/*" id="input-file" hidden />
+        </div>
+      </div>
+      <div class="placeholder">
+        <label for="headline"><h3>Headline</h3></label>
+        <textarea id="headline" name="headline"></textarea>
+      </div>
+      <div class="placeholder">
+        <label for="description"><h3>Description</h3></label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+      <div class="submit">
+        <button type="submit">Upload</button>
+      </div>
+    </div>
+  </form>
+</section>

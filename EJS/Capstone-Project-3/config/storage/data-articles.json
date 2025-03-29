@@ -1,0 +1,20 @@
+{
+  "uploads": [
+    {
+      "image": "/uploads/42580feef0870ad5a1b775e15183ac9f",
+      "headline": "The Benefits of Enough Sleep for Mental Health",
+      "description": "Getting enough sleep helps improve concentration, boosts mood, and supports the immune system. Make sure to sleep at least 7-8 hours per night.",
+      "createdAt": "2025-03-29T15:13:51.541Z"
+    },
+    {
+      "image": "./assets/elena-mozhvilo-UTPySVmQAco-unsplash.jpg",
+      "headline": "Global Health: The Ongoing Battle Against Viruses",
+      "description": "This watercolor illustration represents microscopic viruses, highlighting the global fight against infectious diseases..."
+    },
+    {
+      "image": "./assets/cdc-90ejoVTj2-M-unsplash.jpg",
+      "headline": "Vaccination: A Step Towards a Healthier Future",
+      "description": "A healthcare worker applies a bandage after vaccination, highlighting the importance of immunization in preventing diseases..."
+    }
+  ]
+}

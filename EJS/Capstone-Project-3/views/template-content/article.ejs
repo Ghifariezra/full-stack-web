@@ -1,0 +1,62 @@
+<!-- Hero Content -->
+<section id="hero">
+  <div class="contents">
+    <div class="articles-section">
+      <% if (articles.length > 0) { %> <% articles.forEach(article => { %>
+      <div class="article-content">
+        <div class="image">
+          <% if (article.image) { %>
+          <img src="<%= article.image %>" alt="Uploaded Image" />
+          <% } %>
+        </div>
+        <div class="content">
+          <h1><%= article.headline %></h1>
+          <p class="article-paraf"><%= article.description %></p>
+        </div>
+      </div>
+      <% }) %> <% } else { %>
+      <p>No articles available.</p>
+      <% } %>
+    </div>
+    <div class="comment-section">
+      <div class="comments">
+        <div class="comment-content">
+          <div class="profile">
+            <div class="pic">
+              <img src="./assets/9440461.jpg" alt="picture" />
+            </div>
+            <div class="status">
+              <p class="name">Redrigozax</p>
+              <p class="title">Song Writer</p>
+            </div>
+          </div>
+          <div class="description">
+            <p class="description-paraf">
+              Effectively conveys the benefits of immunization but could be more specific. Does it focus on global vaccination efforts, disease prevention, or distribution challenges? Additionally, it assumes vaccination is always
+              effective, overlooking factors like public resistance, unequal access, and virus mutations. A stronger title could highlight both the challenges and solutions in implementing widespread vaccination programs
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="comment-content">
+          <div class="profile">
+            <div class="pic">
+              <img src="./assets/9440461.jpg" alt="picture" />
+            </div>
+            <div class="status">
+              <p class="name">Redrigozax</p>
+              <p class="title">Song Writer</p>
+            </div>
+          </div>
+          <div class="description">
+            <p class="description-paraf">
+              Effectively conveys the benefits of immunization but could be more specific. Does it focus on global vaccination efforts, disease prevention, or distribution challenges? Additionally, it assumes vaccination is always
+              effective, overlooking factors like public resistance, unequal access, and virus mutations. A stronger title could highlight both the challenges and solutions in implementing widespread vaccination programs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

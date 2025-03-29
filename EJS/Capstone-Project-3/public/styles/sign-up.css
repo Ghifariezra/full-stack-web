@@ -1,0 +1,121 @@
+section#sign-up-content {
+  padding: 0 286px;
+  margin-top: 115px;
+  margin-bottom: 173px;
+}
+section#sign-up-content .content {
+  background-color: #fefefd;
+  border-radius: 40px;
+  box-shadow: rgba(20, 37, 72, 0.1) 0px 4px 4px 0px;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  align-items: center;
+  padding: 49px 137px;
+}
+header.form {
+  color: #142548;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+form {
+  grid-row: 2 / -1;
+}
+.field {
+  color: #34415b;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  gap: 12px;
+}
+label {
+  font-weight: 600;
+  max-width: 474px;
+  align-content: end;
+}
+input {
+  /* background-color: #DEDEDE; */
+  border: none;
+  border-bottom: #142548 1px solid;
+  /* border-radius: 15px; */
+  font-size: 12px;
+  padding: 0px 12px;
+  height: 52px;
+}
+.submit-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 28px;
+}
+input#submit {
+  align-self: center;
+  background-color: #142548;
+  border-radius: 15px;
+  color: #fefefd;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 14px 72px;
+}
+.error-field {
+  background-color: rgb(255, 66, 66);
+  border-radius: 5px;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0px;
+  padding: 8px;
+}
+p.error {
+  color: #fefefd;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 1200px) {
+  section#sign-up-content {
+    padding: 0px 196px;
+  }
+  section#sign-up-content .content {
+    padding: 49px 127px;
+  }
+  header.form {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section#sign-up-content {
+    padding: 0px 136px;
+  }
+  section#sign-up-content .content {
+    padding: 49px 117px;
+  }
+  header.form {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#sign-up-content {
+    padding: 0px 86px;
+  }
+  section#sign-up-content .content {
+    padding: 49px 107px;
+  }
+  header.form {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  section#sign-up-content {
+    padding: 0px 66px;
+  }
+  section#sign-up-content .content {
+    padding: 49px 67px;
+  }
+  header.form {
+    font-size: 22px;
+  }
+}
