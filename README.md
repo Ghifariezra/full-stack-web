@@ -14,3 +14,4 @@
 | 10  |        [_My Resume v2_](./Multi-Page%20Web/Capstone-Project-2/)         |                [Demo](https://ghifariezra.github.io/full-stack-web/Multi-Page%20Web/Capstone-Project-2/) |
 | 11  |            [Drum Kit](./DOM/Drum%20Kit%20Starting%20Files/)             |                  [Demo](https://ghifariezra.github.io/full-stack-web/DOM/Drum%20Kit%20Starting%20Files/) |
 | 12  |   [Simon Game](./jQuery/Simon%20Game%20Challenge%20Starting%20Files/)   | [Demo](https://ghifariezra.github.io/full-stack-web/jQuery/Simon%20Game%20Challenge%20Starting%20Files/) |
+| 13  |   [Simon Game](./EJS/Capstone-Project-3/)   | [Demo](https://ghifariezra.github.io/full-stack-web/EJS/Capstone-Project-3/) |
