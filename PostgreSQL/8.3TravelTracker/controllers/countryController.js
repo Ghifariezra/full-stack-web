@@ -100,8 +100,9 @@ const addCountry = async (req, res) => {
       color: mainData[0].color,
     })
   } catch (error) {
-    console.error("Error saving country:", error);
-    // res.redirect("/");
+    // console.error("Error saving country:", error);
+    
+    // Refresh Data
     const dataUsers = (await fetchUsers()).travelTracker;
     const joinData = (await fetchJoins()).travelTracker;
     const mainData = joinData.filter((item) => item.id === currentId);
