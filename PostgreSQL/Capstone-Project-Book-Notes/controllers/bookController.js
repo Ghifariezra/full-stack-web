@@ -9,8 +9,6 @@ let notes = [
 
 const home = async (req, res) => {
   const result = await books();
-  // console.log(result);
-  const keys = Object.keys(result.bookCollection);
   res.render("index.ejs", { bookCollection: result.bookCollection.master });
 };
 const orderBooks = async (req, res) => {
@@ -79,6 +77,15 @@ const myNotes = async (req, res) => {
       res.redirect(`/books/${bookISBN}`);
     }
   } else if (action === "delete") {
+    if (typeof noteId === "string") {
+      noteId = parseInt(noteId);
+      await db.deleteNote(noteId);
+    } else if (Array.isArray(noteId)) {
+      for (const id of noteId) {
+        const parsedId = parseInt(id);
+        await db.deleteNote(parsedId);
+      }
+    }
     res.redirect(`/books/${bookISBN}`);
   }
 };

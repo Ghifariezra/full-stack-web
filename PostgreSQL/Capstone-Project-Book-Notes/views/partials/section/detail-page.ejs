@@ -47,12 +47,12 @@
         <form class="form-notes" action="/books/<%= book.isbn_13 %>" method="post">
           <% notes.forEach((note) => { %>
           <div class="check-box">
-            <input type="checkbox" name="noteId" value="<%= note.id %>" />
+            <input type="checkbox" name="noteId" value="<%= note.note_id %>" />
           </div>
           <ol>
             <li class="note"><%= note.note %></li>
             <li class="edit-note">
-              <textarea name="noteEdit" value="<%= note.id %>"></textarea>
+              <textarea name="noteEdit" value="<%= note.note_id %>"></textarea>
             </li>
           </ol>
           <% }) %>

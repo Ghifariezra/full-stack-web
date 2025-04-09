@@ -59,11 +59,7 @@ class PostgresConnection {
     },
   };
   #config = {
-    user: this.#POSTGRES_USER,
-    password: `${this.#POSTGRES_PASSWORD}#`,
-    host: "localhost",
-    port: this.#POSTGRES_PORT,
-    database: this.#POSTGRES_DB,
+    connectionString: `postgresql://${this.#POSTGRES_USER}:${this.#POSTGRES_PASSWORD}@ep-dawn-shape-a5l6xng3-pooler.us-east-2.aws.neon.tech/${this.#POSTGRES_DB}?sslmode=require`,
   };
   static instance;
   constructor() {
@@ -84,6 +80,17 @@ class PostgresConnection {
     });
 
     PostgresConnection.instance = this;
+  }
+  async deleteNote(id) {
+    const client = await this.Pool.connect();
+    try {
+      await client.query(this.#queryStatement.deleteNote, [id]);
+    } catch (error) {
+      console.error("Error deleting note:", error);
+      throw error;
+    } finally {
+      client.release();
+    }
   }
   async updateNote(note, id) {
     const client = await this.Pool.connect();
