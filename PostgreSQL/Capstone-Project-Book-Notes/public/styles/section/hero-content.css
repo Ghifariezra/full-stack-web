@@ -1,0 +1,69 @@
+@import url("../var.css");
+section#hero-content {
+    margin: 0px 64px;
+    padding: 124px 0px;
+    border-bottom: gray 0.5px dashed;
+}
+section#hero-content .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+section#hero-content h1 {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    color: darkslategray;
+}
+section#hero-content p {
+    font-size: medium;
+    font-size: var(--font-size-md);
+    color: darkslategray;
+}
+
+/* ----Media Query--- */
+/* Desktop */
+@media screen and (max-width: 1440px) {
+    section#hero-content h1 {
+        font-size: var(--font-size-xxl);
+    }
+    section#hero-content p {
+        font-size: var(--font-size-md);
+    }
+}
+@media screen and (max-width: 1200px) {
+    section#hero-content h1 {
+        font-size: var(--font-size-xl);
+    }
+    section#hero-content p {
+        font-size: var(--font-size-md);
+    }
+}
+@media screen and (max-width: 992px) {
+    section#hero-content h1 {
+        font-size: var(--font-size-lg);
+    }
+    section#hero-content p {
+        font-size: var(--font-size-md);
+    }
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+    section#hero-content h1 {
+        font-size: var(--font-size-md);
+    }
+    section#hero-content p {
+        font-size: var(--font-size-sm);
+    }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+    section#hero-content h1 {
+        font-size: var(--font-size-sm);
+    }
+    section#hero-content p {
+        font-size: var(--font-size-xs);
+    }
+}

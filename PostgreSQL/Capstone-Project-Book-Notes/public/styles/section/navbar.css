@@ -1,0 +1,164 @@
+@import url("../var.css");
+
+section#nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  padding: var(--space-md) var(--space-lg);
+}
+section#nav .image {
+  max-height: 80px;
+}
+section#nav .image img {
+  height: 100%;
+  object-fit: cover;
+}
+section#nav .menu-bar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+section#nav .menu-bar form {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 24px;
+}
+/* Search */
+section#nav .menu-bar form .search {
+  width: max-content;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid var(--outline-border-color);
+}
+section#nav .menu-bar form .search .search-input::placeholder {
+  color: var(--outline-border-color);
+}
+/* 
+  ----Remove X Icon----
+  Reference:
+  https://medium.com/@rion.mrk/how-to-remove-x-icon-from-search-input-field-or-input-type-search-db3c808405fb
+*/
+section#nav .menu-bar form .search .search-input::-webkit-search-decoration,
+section#nav .menu-bar form .search .search-input::-webkit-search-cancel-button,
+section#nav .menu-bar form .search .search-input::-webkit-search-results-button,
+section#nav .menu-bar form .search .search-input::-webkit-search-results-decoration { display: none; }
+section#nav .menu-bar form .search .search-input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+}
+section#nav .menu-bar form .search .search-icon.hide{
+  visibility: hidden;
+}
+section#nav .menu-bar form .search .search-icon {
+  font-size: 24px;
+  color: var(--outline-border-color);
+}
+
+/* 
+  ----Dropdown Menu----
+  Reference:
+  https://www.youtube.com/watch?v=dmFC1e_CUAQ
+*/
+ul {
+  list-style-type: none;
+  border-bottom: 1px solid var(--outline-border-color);
+  /* border-radius: 4px; */
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a.dropdown-btn span{
+  font-size: var(--font-size-xs);
+}
+h5{
+  font-size: var(--font-size-xs);
+  color: var(--primary-color);
+}
+ul li a.dropdown-btn{
+  display: flex;
+  gap: 8px;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 14px;
+  text-align: center;
+}
+ul li ul.dropdown {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  border: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+ul li ul.dropdown li {
+  display: block;
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+/* ----Media Query---- */
+/* Desktop */
+@media screen and (max-width: 1440px) {
+  section#nav .menu-bar form .search .search-input {
+    font-size: var(--font-size-lg);
+  }
+  h5 {
+    font-size: var(--font-size-lg);
+  }
+  ul li a.dropdown-btn span{
+    font-size: var(--font-size-lg);
+  }
+}
+/* Tablet */
+@media screen and (max-width: 992px) {
+  section#nav .menu-bar form .search .search-input {
+    font-size: var(--font-size-md);
+  }
+  h5 {
+    font-size: var(--font-size-md);
+  }
+  ul li a.dropdown-btn span{
+    font-size: var(--font-size-md);
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+  section#nav .menu-bar form .search .search-input {
+    font-size: var(--font-size-sm);
+  }
+  section#nav .image {
+    max-height: 60px;
+  }
+  h5 {
+    font-size: var(--font-size-sm);
+  }
+  ul li a.dropdown-btn span{
+    font-size: var(--font-size-sm);
+  }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+  section#nav .menu-bar form .search .search-input {
+    font-size: var(--font-size-xs);
+  }
+  section#nav .image {
+    max-height: 40px;
+  }
+  h5 {
+    font-size: var(--font-size-xs);
+  }
+  ul li a.dropdown-btn span{
+    font-size: var(--font-size-xs);
+  }
+}

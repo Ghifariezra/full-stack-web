@@ -1,0 +1,18 @@
+@import url("./var.css");
+@import url("./section/navbar.css");
+@import url("./section/hero-content.css");
+@import url("./section/book-content.css");
+@import url("./section/detail-page.css");
+@import url("./section/footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  width: 100%;
+  min-height: 100vh;
+  font-size: var(--font-size-xs);
+}

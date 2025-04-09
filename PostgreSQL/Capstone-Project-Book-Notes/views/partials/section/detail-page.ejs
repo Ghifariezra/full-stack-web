@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="icon" href="../../assets/icon/favicon.ico" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <title>BookBites</title>
+  </head>
+  <body>
+    <%- include('nav') %>
+    <section id="detail-page">
+      <% bookCollection.forEach((book) => { %>
+      <div class="content">
+        <div class="cover">
+          <img src="<%= book.image %>" alt="Book Cover" />
+        </div>
+        <div class="title">
+          <h3><%= book.title %></h3>
+          <p class="info">
+            ISBN: <%= book.isbn_13 %> <br />
+            Author: <%= book.full_name %> <br />
+            Published: <%= book.publish_date %> <br />
+            Recommendation Rating: <%= book.rating %>/1.00
+          </p>
+        </div>
+      </div>
+      <div class="description">
+        <p class="description"><%= book.description %></p>
+      </div>
+      <% }) %>
+    </section>
+    <section id="notes">
+      <div class="edit">
+        <h3 class="title">My Notes</h3>
+        <button type="button">
+          <span class="edit-icon material-symbols-outlined"> edit_square </span>
+          Edit
+        </button>
+      </div>
+      <div class="list-notes">
+        <% bookCollection.forEach((book) => { %>
+        <form class="form-notes" action="/books/<%= book.isbn_13 %>" method="post">
+          <% notes.forEach((note) => { %>
+          <div class="check-box">
+            <input type="checkbox" name="noteId" value="<%= note.id %>" />
+          </div>
+          <ol>
+            <li class="note"><%= note.note %></li>
+            <li class="edit-note">
+              <textarea name="noteEdit" value="<%= note.id %>"></textarea>
+            </li>
+          </ol>
+          <% }) %>
+          <div class="add-notes">
+            <textarea name="noteNew"></textarea>
+          </div>
+          <div class="choice">
+            <button class="delete" type="submit" name="action" value="delete">
+              <span class="delete-icon material-symbols-outlined"> delete </span>
+              Delete Notes
+            </button>
+            <button class="add" type="submit" name="action" value="edit" style="background-color: #1f679b !important">
+              <span class="add-icon material-symbols-outlined"> check_circle </span>
+              Edit Notes
+            </button>
+            <button class="add" type="submit" name="action" value="add">
+              <span class="add-icon material-symbols-outlined"> add_box </span>
+              Submit Notes
+            </button>
+          </div>
+        </form>
+        <% }) %>
+      </div>
+    </section>
+    <%- include('../footer') %>

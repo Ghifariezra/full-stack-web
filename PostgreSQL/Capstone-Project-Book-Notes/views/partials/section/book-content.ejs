@@ -1,0 +1,24 @@
+<section id="book-content">
+  <% bookCollection.forEach((book) => { %>
+  <div class="books">
+    <div class="image">
+      <img src="<%= book.image %>" alt="Book Cover" />
+    </div>
+    <div class="content">
+      <% if (book.isbn_13) { %>
+      <a href="/books/<%= book.isbn_13 %>">
+        <h3><%= book.title %></h3>
+      </a>
+      <% } else { %>
+        <a href="/books/<%= book.id %>">
+          <h3><%= book.title %></h3>
+        </a>
+      <% } %>
+      <span> <span style="font-weight: 600;">Author: <%= book.full_name %></span> · Published: <%= book.publish_date %> · Recommendation Rating: <%= book.rating %>/1.00</span>
+      <p>
+        <%= book.description %>
+      </p>
+    </div>
+  </div>
+  <% }) %>
+</section>
