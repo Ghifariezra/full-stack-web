@@ -3,6 +3,7 @@ import db from "../config/dbConnection.js";
 const bookCollection = async (req, res) => {
     try {
         const books = await db.fetchJoinMaster();
+        console.log(books);
         res.send({
             message: "Books fetched successfully",
             bookCollection: books

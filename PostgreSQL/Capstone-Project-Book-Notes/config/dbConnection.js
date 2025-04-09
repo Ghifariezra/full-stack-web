@@ -7,7 +7,7 @@ dotenv.config();
 class PostgresConnection {
   #POSTGRES_USER = process.env.POSTGRES_USER;
   #POSTGRES_PASSWORD = process.env.POSTGRES_PASSWORD;
-  #POSTGRES_HOST = parseInt(process.env.POSTGRES_HOST);
+  #POSTGRES_HOST = process.env.POSTGRES_HOST;
   #POSTGRES_DB = process.env.POSTGRES_DB;
   #queryMaster = {
     books: "SELECT id_book FROM books",
