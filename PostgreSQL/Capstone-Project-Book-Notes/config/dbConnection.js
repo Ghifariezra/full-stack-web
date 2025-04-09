@@ -7,7 +7,7 @@ dotenv.config();
 class PostgresConnection {
   #POSTGRES_USER = process.env.POSTGRES_USER;
   #POSTGRES_PASSWORD = process.env.POSTGRES_PASSWORD;
-  #POSTGRES_PORT = parseInt(process.env.POSTGRES_PORT);
+  #POSTGRES_HOST = parseInt(process.env.POSTGRES_HOST);
   #POSTGRES_DB = process.env.POSTGRES_DB;
   #queryMaster = {
     books: "SELECT id_book FROM books",
@@ -59,7 +59,7 @@ class PostgresConnection {
     },
   };
   #config = {
-    connectionString: `postgresql://${this.#POSTGRES_USER}:${this.#POSTGRES_PASSWORD}@ep-dawn-shape-a5l6xng3-pooler.us-east-2.aws.neon.tech/${this.#POSTGRES_DB}?sslmode=require`,
+    connectionString: `postgresql://${this.#POSTGRES_USER}:${this.#POSTGRES_PASSWORD}@${this.#POSTGRES_HOST}/${this.#POSTGRES_DB}?sslmode=require`,
   };
   static instance;
   constructor() {
